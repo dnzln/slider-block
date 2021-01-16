@@ -10,37 +10,36 @@
 <body>
     <header class="main-header">
         <div class="logo-block">
-            <a href="#"><img src="./assets/images/Logo.png" alt="Logo"></a>            
+            <a href="#" class="logo">LOGO</a>
+            <ul class="lang-switch-list">
+                <li class="lang-switch-item">
+                    <label>
+                        <input type="radio" name="lang-radio" class="lang-switch-input" checked>
+                        <span>UA</span>
+                    </label>
+                </li>
+                <li class="lang-switch-item">
+                    <label>
+                        <input type="radio" name="lang-radio" class="lang-switch-input">
+                        <span>RU</span>
+                    </label>
+                </li>
+                <li class="lang-switch-item">
+                    <label>
+                        <input type="radio" name="lang-radio" class="lang-switch-input">
+                        <span>EN</span>
+                    </label>
+                </li>
+            </ul>
         </div>
         
         
     </header>
     <div class="first-block">
         <label for="menu-input" class="menu-icon"></label>
-            <input id="menu-input" class="menu-input" type="checkbox" >
-        
-        
-        <nav class="main-nav">
-            <ul class="lang-switch-list">
-                <li class="lang-switch-item">
-                    <label>
-                        <input type="radio" name="lang-radio" class="lang-switch-input" checked>
-                        <span>UA</span> 
-                    </label> 
-                </li>
-                <li class="lang-switch-item">
-                    <label>
-                        <input type="radio" name="lang-radio" class="lang-switch-input">
-                        <span>RU</span> 
-                    </label> 
-                </li>
-                <li class="lang-switch-item">
-                    <label>
-                        <input type="radio" name="lang-radio" class="lang-switch-input">
-                        <span>EN</span> 
-                    </label> 
-                </li>
-            </ul>
+        <input id="menu-input" class="menu-input" type="checkbox">
+
+        <nav class="main-nav">            
             <ul class="menu-list">
                 <li class="menu-item"><a href="#">Головна</a></li>
                 <li class="menu-item"><a href="#">Про компанію</a></li>
@@ -58,47 +57,72 @@
                 <ul class="slider-switch-list">
                     <li class="slider-switch-item">
                         <label>
-                            <input type="radio" name="slider-radio" class="slider-switch-input" checked>
+                            <input type="radio" name="slider-radio" value="first" class="slider-switch-input" checked>
                             <span>01</span> 
                         </label> 
                     </li>
                     <li class="slider-switch-item">
                         <label>
-                            <input type="radio" name="slider-radio" class="slider-switch-input">
+                            <input type="radio" name="slider-radio" value="second" class="slider-switch-input">
                             <span>02</span>
                         </label> 
                     </li>
                     <li class="slider-switch-item">
                         <label>
-                            <input type="radio" name="slider-radio" class="slider-switch-input">
+                            <input type="radio" name="slider-radio" value="third" class="slider-switch-input">
                             <span>03</span>
                         </label> 
                     </li>
                     <li class="slider-switch-item">
                         <label>
-                            <input type="radio" name="slider-radio" class="slider-switch-input">
+                            <input type="radio" name="slider-radio" value="fourth" class="slider-switch-input">
                             <span>04</span>
                         </label> 
                     </li>
                 </ul>
-                <strong class="slider-heading">Акційна пропозиція №1</strong>
-                <p class="slider-text">Забудовник – это 5 лет успешной работы на украинском рынке. Успешной работы на украинском
-                    рынке.
-                </p>
+                <div class="slides">
+                    <div class="first-slide show-slide">
+                        <strong class="slider-heading">Акційна пропозиція №1</strong>
+                        <p class="slider-text">Забудовник – это 5 лет успешной работы на украинском рынке. Успешной работы на украинском
+                            рынке.
+                        </p>
+                    </div>
+                    <div class="second-slide">
+                        <strong class="slider-heading">Акційна пропозиція №2</strong>
+                        <p class="slider-text">Забудовник – это 5 лет успешной работы на украинском рынке. Успешной работы на украинском
+                            рынке.
+                        </p>
+                    </div>
+                    <div class="third-slide">
+                        <strong class="slider-heading">Акційна пропозиція №3</strong>
+                        <p class="slider-text">Забудовник – это 5 лет успешной работы на украинском рынке. Успешной работы на украинском
+                            рынке.
+                        </p>
+                    </div>
+                    <div class="fourth-slide">
+                        <strong class="slider-heading">Акційна пропозиція №4</strong>
+                        <p class="slider-text">Забудовник – это 5 лет успешной работы на украинском рынке. Успешной работы на украинском
+                            рынке.
+                        </p>
+                    </div>
+                </div>
+                
+                
             </div>
-            <div class="image-area"></div>
+            <div class="image-area">
+            </div>
         </div>
         
         <div class="intro-block">
-            <strong class="intro-heading">Надійний
-            забудовник</strong>
+            <strong class="intro-heading">Надійний забудовник</strong>
             <p class="intro-text">– это 7 лет успешной работы на украинском рынке. Более 700 квартир уже продано, а в планах компании построить 120 тыс.
             метров жилой площади.</p>
         </div>
         
-        <div class="link-block">
-            <a href="#" class="about-link">ПРО КОМПАНІЮ</a>
-        </div>
+        <a href="#" class="link-block">
+            <span class="about-link">ПРО КОМПАНІЮ</span>
+        </a>
     </div>
+    <script src="./script.js"></script>
 </body>
 </html>
